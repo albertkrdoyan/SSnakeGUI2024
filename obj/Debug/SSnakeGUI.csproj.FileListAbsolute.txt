@@ -1,0 +1,11 @@
+C:\Users\alber\source\repos\SSnakeGUI\bin\Debug\SSnakeGUI.exe.config
+C:\Users\alber\source\repos\SSnakeGUI\bin\Debug\SSnakeGUI.exe
+C:\Users\alber\source\repos\SSnakeGUI\bin\Debug\SSnakeGUI.pdb
+C:\Users\alber\source\repos\SSnakeGUI\obj\Debug\SSnakeGUI.csproj.AssemblyReference.cache
+C:\Users\alber\source\repos\SSnakeGUI\obj\Debug\SSnakeGUI.Properties.Resources.resources
+C:\Users\alber\source\repos\SSnakeGUI\obj\Debug\SSnakeGUI.Resources.resources
+C:\Users\alber\source\repos\SSnakeGUI\obj\Debug\SSnakeGUI.csproj.GenerateResource.cache
+C:\Users\alber\source\repos\SSnakeGUI\obj\Debug\SSnakeGUI.csproj.CoreCompileInputs.cache
+C:\Users\alber\source\repos\SSnakeGUI\obj\Debug\SSnakeGUI.exe
+C:\Users\alber\source\repos\SSnakeGUI\obj\Debug\SSnakeGUI.pdb
+C:\Users\alber\source\repos\SSnakeGUI\obj\Debug\SSnakeGUI.Form1.resources
