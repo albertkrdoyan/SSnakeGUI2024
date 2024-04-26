@@ -148,7 +148,7 @@ namespace SSnakeGUI
             {
                 if (e.KeyData == Keys.W || e.KeyData == Keys.Up && !(movement.Last == Directions.up || movement.Last == Directions.down))
                 { movement.Add(Directions.up); }
-                if (e.KeyData == Keys.A || e.KeyData == Keys.Left && !(movement.Last == Directions.left || movement.Last == Directions.right))
+                if (e.KeyData == Keys.A || e.KeyData == Keys.Left && !(movement.Last == Directions.left || movement.Last == Directions.right || current_direction == Directions.stop))
                 { movement.Add(Directions.left); }
                 if (e.KeyData == Keys.S || e.KeyData == Keys.Down && !(movement.Last == Directions.up || movement.Last == Directions.down))
                 { movement.Add(Directions.down); }
@@ -196,6 +196,14 @@ namespace SSnakeGUI
                 if (head_x == food_x && head_y == food_y)
                 {
                     score += 10;
+                    if (score == (h*w - 5) * 10)
+                    {
+                        timer.Enabled = false;
+                        on_pause = true;
+                        MessageBox.Show("You WOOONNN!!!! :))))))");
+                        Close();
+                        return;
+                    }
                     ground_info[head_y, head_x] = true;
                     while (true)
                     {
@@ -312,9 +320,10 @@ namespace SSnakeGUI
 
                 if (i == 0) l.Text += "\t\tControls: [WASD] or Arrow Keys, [P] for Pause and Resume.";
                 if (i == 2) l.Text += "\t\t\"+\" for faster, \"-\" for slower.";
-                if (i == 6) l.Text += "\t\tInterval(speed): " + timer.Interval.ToString() + ".";
-                if (i == 8) l.Text += "\t\tScore: " + score.ToString() + ".";
-                if (i == 4) l.Text += "\t\tTips: don't go out of green field or step on yourself :). GG";
+                if (i == 7) l.Text += "\t\tInterval(speed): " + timer.Interval.ToString() + ".";
+                if (i == 9) l.Text += "\t\tScore: " + score.ToString() + ".";
+                if (i == 4) l.Text += "\t\tTips: don't go out of green field or step on yourself.";
+                if (i == 5) l.Text += "\t\t\t\tEat more fruits to get longer. :) GG";
                 l.Text += "\n";
             }
         }
